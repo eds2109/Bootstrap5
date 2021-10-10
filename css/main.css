@@ -1,3 +1,52 @@
+/* General style
+================= */
+
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+  min-width: 320px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ee6e73;
+  transition: all .5s;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000;
+}
+
+::selection {
+  background-color: #ee6e73;
+  color: #fff;
+}
+/* End General style */
+
+/* Header top
+================= */
+.header-top {
+  background-color: #ee6e73;
+  position: relative;
+}
+
+.header-top a {
+  color: #fff;
+}
+
+.header-top a:hover {
+  color: #000;
+}
+
+/* End Header top
+================= */
