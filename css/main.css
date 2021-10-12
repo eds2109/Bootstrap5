@@ -1,13 +1,21 @@
 /* General style
 ================= */
+:root {
+  --main-color-prymary: #ee6e73;
+  --main-color-first: #fff;
+  --main-color-text: #000;
+}
+
+/* Пример вствки пеерменной в верстку.
+background-color: var(--main-color-prymary); */
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 27px;
   font-weight: 400;
-  color: #000;
-  background-color: #fff;
+  color: var(--main-color-text);
+  background-color: var(--main-color-first);
   min-width: 320px;
 }
 
@@ -18,29 +26,29 @@ img {
 
 a {
   text-decoration: none;
-  color: #ee6e73;
+  color: var(--main-color-prymary);
   transition: all .5s;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #000;
+  color: var(--main-color-text);
 }
 
 ::selection {
-  background-color: #ee6e73;
-  color: #fff;
+  background-color: var(--main-color-prymary);
+  color: var(--main-color-first);
 }
 
 /* Стили для выпадающего меню юзер */
 li a.dropdown-item {
-  color: #000;
+  color: var(--main-color-text);
 }
 
 li a.dropdown-item:focus,
 li a.dropdown-item:hover {
-  background-color: #ee6e73;
-  color: #fff;
+  background-color: var(--main-color-prymary);
+  color: var(--main-color-first);
 }
 
 /* Для кнопок аниационный эффект при наведении */
@@ -79,16 +87,16 @@ li a.dropdown-item:hover {
 /* Header top
 ================= */
 .header-top {
-  background-color: #ee6e73;
+  background-color: var(--main-color-prymary);
   position: relative;
 }
 
 .header-top a {
-  color: #fff;
+  color: var(--main-color-first);
 }
 
 .header-top a:hover {
-  color: #000;
+  color: var(--main-color-text);
 }
 
 .header-top #search {
@@ -100,7 +108,7 @@ li a.dropdown-item:hover {
   transition: all .2s;
   transform: scale(0);
   display: flex;
-  background-color: #ee6e73;
+  background-color: var(--main-color-prymary);
   z-index: 1;
 }
 
@@ -134,8 +142,8 @@ li a.dropdown-item:hover {
 }
 
 .modal-header {
-  background-color: #ee6e73;
-  color: #fff;
+  background-color: var(--main-color-prymary);
+  color: var(--main-color-first);
 }
 
 .modal-body img {
@@ -143,28 +151,46 @@ li a.dropdown-item:hover {
 }
 
 .modal-body a {
-  color: #ee6e73;
+  color: var(--main-color-prymary);
 }
 
 /* Header bottom */
 .header-bottom .navbar-brand {
-  color: #000;
+  color: var(--main-color-text);
   font-weight: 700;
 }
 
 .header-bottom .navbar-brand:hover {
-  color: #ee6e73;
+  color: var(--main-color-prymary);
 }
 
 .header-bottom .navbar-nav .nav-link {
-  color: #000;
+  color: var(--main-color-text);
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .header-bottom .navbar-nav .nav-link:hover {
- color: #ee6e73;
+  color: var(--main-color-prymary);
+}
+
+/* Верхний слайдер carousel  */
+.my-carousel {
+  padding: 0;
+}
+
+.my-carousel .carousel-item {
+    display: flex;
+  max-height: 500px;
+}
+
+.my-carousel .carousel-item img {
+  object-fit: cover;
+}
+
+.carousel-caption {
+  top: 10rem;
 }
 
 /* Показ дропдаун меню при наведении на десктопах */
