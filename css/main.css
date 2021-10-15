@@ -2,6 +2,7 @@
 ================= */
 :root {
   --main-color-prymary: #ee6e73;
+  --main-color-decor: #ec4835;
   --main-color-first: #fff;
   --main-color-text: #000;
 }
@@ -246,7 +247,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 200px;
   padding: 20px;
 }
 
@@ -255,7 +256,7 @@ section {
 }
 
 .product-cart .product-details {
-  padding: 30px;
+  padding: 20px;
 }
 
 .product-cart .product-details h4 a {
@@ -301,8 +302,56 @@ section {
    margin-right: 10px;
 }
 
-/* Медиа запросы */
+/* Services */
+.service-item {
+  transition: all .5s;
+  padding: 40px 20px;
+  margin: 0 10px;
+  position: relative;
+}
 
+.service-item p {
+  position: relative;
+  z-index: 5;
+}
+
+.service-item i {
+  font-size: 70px;
+  color: var(--main-color-prymary);
+}
+
+.service-item::before {
+  border-bottom: 1px solid var(--main-color-decor);
+  border-left: 1px solid var(--main-color-decor);
+  -webkit-transform-origin: 0 100%;
+}
+
+.service-item::after {
+  border-top: 1px solid var(--main-color-decor);
+  border-right: 1px solid var(--main-color-decor);
+  transform-origin: 100% 0;
+}
+
+.service-item::after,
+.service-item::before {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  transform: scale(0);
+  transition: .5s;
+}
+
+.service-item:hover::after,
+.service-item:hover::before {
+  transform: scale(1);
+}
+
+/* Медиа запросы */
 /* Показ дропдаун меню при наведении на десктопах */
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {display: none;}
@@ -310,16 +359,36 @@ section {
   .navbar .nav-item .dropdown-menu { margin-top: 0;}
 }
 
-/* Уменьшаем высоту карточек товара на 991px */
 @media (max-width: 991px) {
   .product-cart .product-tumb {
     height: 200px;
   }
+  .product-cart .product-details h4 a {
+    height: 55px;
+    font-size: 1.2rem;
+  }
+  .product-cart .product-price {
+    font-size: 15px;
+  }
 }
 
-/* Уменьшаем размер заголовка */
+@media (max-width: 767px) {
+  .service-item {
+    padding: 20px 10px;
+  }
+}
+
 @media (max-width: 576px) {
   .section-title {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header-top .icons i, .icon-phone {
+    font-size: 16px;
+  }
+  .header-top .icons a {
+    padding: 5px;
   }
 }
