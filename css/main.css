@@ -384,6 +384,27 @@ section {
   font-size: 20px;
 }
 
+/* Кнопка вверх */
+#top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--main-color-prymary);
+  color: var(--main-color-first);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 25px;
+  opacity: .5;
+  display: none;
+  z-index: 10;
+}
+
+#top:hover {
+ opacity: 1;
+ transition: all .5s;
+}
 
 /* Медиа запросы */
 /* Показ дропдаун меню при наведении на десктопах */
@@ -415,6 +436,11 @@ section {
 @media (max-width: 576px) {
   .section-title {
     font-size: 20px;
+  }
+  #top {
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
   }
 }
 
