@@ -23,4 +23,10 @@ $(function() {
   $('#top').click(function() {
     $('body, html').animate({scrollTop: 0}, 300);
   });
+
+  /* Обработчик для показа Сайдбара по клику */
+  $('.sidebar-toggler .btn').click(function() {
+    $('.sidebar-toggle').slideToggle();
+  });
+
 });

@@ -1,0 +1,23 @@
+/* Category */
+.sidebar-toggler .btn {
+  width: 100%;
+}
+
+.sidebar-toggle {
+  display: none;
+}
+
+.sidebar .list-group-item.active {
+  background-color: var(--main-color-prymary);
+  border-color: var(--main-color-prymary);
+}
+
+@media all and (min-width: 992px) {
+  .sidebar-toggler {
+    display: none;
+  }
+
+  .sidebar-toggle {
+    display: block !important;
+  }
+}
