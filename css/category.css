@@ -21,3 +21,22 @@
     display: block !important;
   }
 }
+
+.page-link {
+  color: var(--main-color-prymary);
+}
+
+.page-item.active .page-link {
+    background-color: var(--main-color-prymary);
+    border-color: var(--main-color-prymary);
+}
+
+.page-link:hover {
+  color: #fff;
+  background-color: var(--main-color-prymary);
+  border-color: var(--main-color-prymary);
+}
+
+.input-group-text, .form-select {
+  font-size: 14px;
+}

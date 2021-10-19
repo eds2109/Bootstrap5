@@ -43,6 +43,11 @@ a:focus {
   color: var(--main-color-first);
 }
 
+/* Заголовок category.html */
+h1 {
+  font-size: 1.5rem;
+}
+
 /* Стили для выпадающего меню юзер
 ==================================*/
 li a.dropdown-item {
