@@ -1,5 +1,6 @@
 /* Импорт файлов */
 @import url('.//category.css');
+@import url('.//product.css');
 
 /* General style
 ================= */
@@ -251,7 +252,7 @@ section {
   box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
 }
 
-.product-cart .product-tumb {
+.product-cart .product-tumb a {
   display: flex;
   align-items: center;
   justify-content: center;

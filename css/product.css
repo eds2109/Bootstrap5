@@ -1,0 +1,29 @@
+/* Product */
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color .5s;
+}
+
+a.thumbnail.active,
+a.thumbnail:focus,
+a.thumbnail:hover {
+  border-color: var(--main-color-prymary);
+}
+
+.thumbnails .thumb-main a {
+  padding: 20px;
+}
+
+.thumbnails .thumb-main img {
+  max-width: 300px;
+}
+
+.thumbnails .thumb-additional {
+  float: left;
+  margin-right: 20px;
+  max-width: 100px;
+}
