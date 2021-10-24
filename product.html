@@ -163,7 +163,7 @@
   <div class="container py-3">
     <div class="row">
 
-      <div class="col-md-4 order-md-2">Sidebar</div>
+      <div class="col-md-4 order-md-2">Sidebar</div> <!-- ./col-md-4 order-md-2 -->
 
       <div class="col-md-8 order-md-1">
 
@@ -187,6 +187,53 @@
                 src=".//img/products/catalog/4.jpg" alt=""></a>
           </li>
         </ul>
+
+        <!-- Блок nav-tabs -->
+        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#description" type="button">Описание</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#specification" type="button">Характеристики</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod architecto atque dignissimos nulla laborum, magni culpa impedit quo maiores, facilis saepe quam asperiores sed non odio fugit voluptates corrupti numquam?</p>
+            <p>Tenetur magni quaerat neque obcaecati repellendus quidem modi voluptas nesciunt nam aliquid quam harum ipsam reiciendis atque recusandae, vitae ratione est odit cum beatae quibusdam quae quo. Dicta, aspernatur in.</p>
+            <p>Id deleniti repudiandae debitis voluptates recusandae at ab minus, et illum enim, veniam ut expedita distinctio fugit eum. Distinctio excepturi porro assumenda officia necessitatibus molestiae delectus fugiat ab voluptatum voluptatem?</p>
+            <p>Cumque et voluptates voluptas? Eum tempore sint dicta quos veritatis excepturi consequuntur iste? Officia voluptas similique natus est quam labore minus provident sequi, hic quisquam repellat corrupti recusandae error voluptates.</p>
+            <p>Accusamus nobis dolore soluta vero ea hic aperiam molestias quae sequi aut, odio cum quis aliquam vel. Ex libero minus, doloribus obcaecati repudiandae quos tempora labore similique saepe, at nesciunt!</p>
+          </div>
+
+          <div class="tab-pane fade" id="specification">
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <td colspan="2"><strong>Memory</strong></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>test 1</td>
+                  <td>8gb</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <td colspan="2"><strong>Processor</strong></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>No. of Cores</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!-- ./tab-pane fade -->
+        </div>
 
       </div> <!-- ./col-md-8 order-md-1 -->
 
