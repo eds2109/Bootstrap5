@@ -49,6 +49,20 @@ h1 {
   font-size: 1.5rem;
 }
 
+/* Цвет обводки формы */
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: var(--main-color-prymary);
+  outline: 0;
+  box-shadow: 0 0 0 .1rem rgba(238, 110, 115, .25);
+}
+
+/* Переопределяем цвет кнопки */
+.btn-danger {
+  background-color:  var(--main-color-prymary);
+}
+
 /* Стили для выпадающего меню юзер
 ==================================*/
 li a.dropdown-item {
@@ -290,13 +304,13 @@ section {
   padding-top: 20px;
 }
 
-.product-cart .product-price {
+.product-price {
   font-size: 18px;
   font-weight: 600;
   color: var(--main-color-prymary);
 }
 
-.product-cart .product-price small {
+.product-price small {
   color: #ccc;
   font-weight: 400;
   text-decoration: line-through;
